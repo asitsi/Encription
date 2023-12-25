@@ -25,3 +25,32 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.container-flud {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container-flud {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-flud {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-flud {
+    width: 1170px;
+  }
+}
+
+h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
