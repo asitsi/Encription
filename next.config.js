@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/Encription',
-  assetPrefix: '/Encription/',
+  reactStrictMode: true,
+
+ // Add basePath
+  basePath: '/github-pages',
+
 }
 
 module.exports = nextConfig

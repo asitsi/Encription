@@ -46,7 +46,7 @@ export default function Home() {
   };
 
   return (
-    <main style={{height: '100svh', textAlign:'center' }} className="">
+    <main style={{height: '100svh', textAlign:'center' }}>
       <h1 className="text-transparent text-2xl md:text-3xl lg:text-2xl bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 my-20">SHA256 encription</h1>
       <div className="container-flud mx-auto my-5">
         <label htmlFor="search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -59,7 +59,7 @@ export default function Home() {
           <input type="search" value={inputText} onChange={handleInputChange} id="search" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Text:" required />
           <button type="submit" onClick={handleHash} className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Hash Text</button>
         </div>
-        <div className="" style={{display: 'flex', justifyContent: 'center', flexDirection: 'column', gap: '2rem' }}>
+        <div style={{display: 'flex', justifyContent: 'center', flexDirection: 'column', gap: '2rem' }}>
           <h1 className="text-transparent text-3xl md:text-2xl lg:text-3xl bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Hashed Text (SHA-256):</h1>
           <h1 onClick={handleCopyClick} className="display-4 text-3xl"> {hashedText}</h1>
           <button onClick={handleCopyClick} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{isCopied ? 'Copied!' : 'Copy to Clipboard'}</button>
